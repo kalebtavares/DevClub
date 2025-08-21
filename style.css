@@ -1,0 +1,192 @@
+* {
+
+    margin: 0;
+    /*Reseta o margin de todos os elementos*/
+    padding: 0;
+    /*Reseta o padding de todos os elementos*/
+    box-sizing: border-box;
+    /*Define o box-sizing para border-box, o que significa que o padding e a borda serão incluídos na largura e altura total do elemento*/
+}
+
+/* Estilos globais, trecho para padronizar as cores sem precisar digitar manualmente, apenas chamar a cor salva na varialvel.*/
+:root {
+    --primary-color: #FF4111;
+    --secondary-color: #2C3E50;
+    --accent-color: #3498DB;
+    --text-color: #2C3E50;
+    --light-gray: #F8F9FA;
+    --border-color: #E9ECEF;
+    --white-color: #FFFFFF;
+    --hover-btn: rgba(255, 255, 255, 0.1);
+
+
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*Define a fonte padrão do corpo como Arial, com uma alternativa sans-serif*/
+    background-color: var(--light-gray);
+    /*Define a cor de fundo do corpo usando a variável light-gray*/
+    color: var(--text-color);
+    /*Define a cor do texto usando a variável text-color*/
+    line-height: 1.6;
+    /*Define o espaçamento entre linhas para melhorar a legibilidade*/
+
+}
+
+header {
+    background-color: var(--white-color);
+    /*Define a cor de fundo do cabeçalho usando a variável primary-color*/
+    padding: 16px 32px;
+    /*Adiciona um preenchimento de 16px na parte superior e inferior, e 32px nas laterais*/
+    display: flex;
+    /*Usa flexbox para organizar os elementos dentro do cabeçalho*/
+    align-items: center;
+    /*Alinha os itens do cabeçalho verticalmente ao centro*/
+    justify-content: space-around;
+    /*Distribui os itens do cabeçalho com espaço igual entre eles*/
+}
+
+.logo {
+    display: flex;
+    /*Usa flexbox para organizar os elementos dentro do logo*/
+    align-items: center;
+    /*Alinha os itens do logo verticalmente ao centro*/
+    gap: 16px;
+    /*Adiciona um espaço de 16px entre os itens do logo*/
+}
+
+h1 {
+    font-size: 32px;
+    /*Define o tamanho da fonte do título como 32px*/
+    color: var(--primary-color);
+    /*Define a cor do texto do título usando a variável primary-color*/
+    font-weight: bold;
+    /*Define o peso da fonte do título como negrito*/
+}
+
+.fa-bolt {
+    color: var(--primary-color);
+    /*Define a cor do ícone de raio usando a variável primary-color*/
+    font-size: 36px;
+    /*Define o tamanho do ícone de raio como 36px*/
+}
+
+.container-busca {
+    width: 100%;
+    /*Define a largura do contêiner de busca como 100% do elemento pai*/
+    ;
+    max-width: 500px;
+    /*Define a largura máxima do contêiner de busca como 500px*/
+    margin: 0 32px;
+    display: flex;
+    /*Usa flexbox para organizar os elementos dentro do contêiner de busca*/
+    align-items: center;
+    /*Alinha os itens do contêiner de busca verticalmente ao centro*/
+    padding: 8px 16px;
+    background-color: var(--light-gray);
+    border-radius: 24px;
+    /*Adiciona um raio de borda de 24px para arredondar os cantos do contêiner de busca*/
+}
+
+.container-busca input {
+    width: 100%;
+    /*Define a largura do campo de entrada como 100% do elemento pai*/
+    border: none;
+    /*Remove a borda do campo de entrada*/
+    outline: none;
+    /*Remove o contorno do campo de entrada*/
+    background-color: var(--light-gray);
+    /*Define a cor de fundo do campo de entrada como transparente*/
+    padding: 8px;
+    /*Adiciona um preenchimento de 8px ao campo de entrada*/
+    font-size: 16px;
+    /*Define o tamanho da fonte do campo de entrada como 16px*/
+}
+
+.fa-magnifying-glass {
+    color: var(--primary-color);
+    /*Define a cor do ícone de lupa usando a variável primary-color*/
+}
+
+.container-categorias {
+    display: flex;
+    /*Usa flexbox para organizar os elementos dentro do contêiner de categorias*/
+    justify-content: center;
+    /*Centraliza os itens do contêiner de categorias horizontalmente*/
+    background-color: var(--secondary-color);
+    /*Define a cor de fundo do contêiner de categorias usando a variável secondary-color*/
+
+}
+
+.container-categorias nav {
+    display: flex;
+    /*Usa flexbox para organizar os botões dentro do contêiner de categorias*/
+    justify-content: center;
+    /*Centraliza os botões do contêiner de categorias horizontalmente*/
+    align-items: center;
+    /*Alinha os botões do contêiner de categorias verticalmente ao centro*/
+    gap: 16px;
+    /*Adiciona um espaço de 16px entre os botões do contêiner de categorias*/
+    width: 100%;
+    /*Define a largura do contêiner de categorias como 100% do elemento pai*/
+    max-width: 1200px;
+    /*Define a largura máxima do contêiner de categorias como 1200px*/
+    padding: 8px 32px;
+    /*Adiciona um preenchimento de 8px na parte superior e inferior, e 32px nas laterais*/
+
+}
+
+.botao-categorias {
+    display: flex;
+    /*Usa flexbox para organizar os elementos dentro do botão de categorias*/
+    gap: 8px;
+    /*Adiciona um espaço de 8px entre os elementos dentro do botão de categorias*/
+    align-items: center;
+    /*Alinha os elementos dentro do botão de categorias verticalmente ao centro*/
+    border: none;
+    /*Remove a borda do botão de categorias*/
+    border-radius: 24px;
+    /*Adiciona um raio de borda de 24px para arredondar os cantos do botão de categorias*/
+    color: var(--white-color);
+    /*Define a cor do texto do botão de categorias usando a variável white-color*/
+    background: none;
+    /*Define o fundo do botão de categorias como transparente*/
+    padding: 12px 24px;
+    /*Adiciona um preenchimento de 12px na parte superior e inferior, e 24px nas laterais*/
+    cursor: pointer;
+    /*Define o cursor como pointer ao passar o mouse sobre o botão de categorias*/
+}
+
+.botao-categorias:hover {
+    background-color: var(--hover-btn);
+    /*Adiciona um fundo ao botão de categorias ao passar o mouse sobre ele*/
+}
+
+.botao-categorias.ativo {
+    background-color: var(--primary-color);
+    /*Define o fundo do botão de categorias ativo usando a variável primary-color*/
+}
+
+.secao-hero {
+    background: #833AB4;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    color: var(--white-color);
+    /*Define a cor do texto da seção hero usando a variável white-color*/
+    text-align: center;
+    /*Centraliza o texto dentro da seção hero*/
+    padding: 48px 32px;
+    /*Adiciona um preenchimento de 48px na parte superior e inferior, e 32px nas laterais*/
+}
+
+footer{
+    background-color: var(--secondary-color);
+    /*Define a cor de fundo do rodapé usando a variável secondary-color*/
+    color: var(--white-color);
+    /*Define a cor do texto do rodapé usando a variável white-color*/
+    text-align: center;
+    /*Centraliza o texto dentro do rodapé*/
+    padding: 32px;
+    /*Adiciona um preenchimento de 16px na parte superior e inferior do rodapé*/
+
+}
