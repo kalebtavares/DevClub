@@ -166,6 +166,7 @@ h1 {
 .botao-categorias.ativo {
     background-color: var(--primary-color);
     /*Define o fundo do botão de categorias ativo usando a variável primary-color*/
+
 }
 
 .secao-hero {
