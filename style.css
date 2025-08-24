@@ -191,3 +191,93 @@ footer{
     /*Adiciona um preenchimento de 16px na parte superior e inferior do rodapé*/
 
 }
+
+.produtos {
+    width: 100%;
+    /*Define a largura da seção de produtos como 100% do elemento pai*/
+    max-width: 1200px;
+    /*Define a largura máxima da seção de produtos como 1200px*/
+    padding: 32px;
+    /*Adiciona um preenchimento de 32px ao redor da seção de produtos*/
+    margin: 0 auto;
+    /*Centraliza a seção de produtos horizontalmente*/
+
+
+
+
+}
+
+
+.produtos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /*Define um layout de grade responsivo com colunas que se ajustam automaticamente*/
+    gap: 20px; /*Adiciona um espaço de 20px entre os itens da grade*/
+
+}
+
+.cartao-produto {
+    background-color: var(--white-color); /*Define a cor de fundo do cartão de produto usando a variável white-color*/
+    border-radius: 16px; box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; /*Adiciona um raio de borda de 16px e uma sombra ao redor do cartão de produto*/
+    cursor: pointer;    /*Define o cursor como pointer ao passar o mouse sobre o cartão de produto*/ 
+    transition: 0.5s; /*Adiciona uma transição suave de 0.3 segundos para as propriedades do cartão de produto*/
+    overflow: hidden; /*Garante que o conteúdo do cartão de produto não ultrapasse os limites do cartão*/
+
+}
+
+.cartao-produto:hover {
+    box-shadow:box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; /*Adiciona uma sombra mais intensa ao redor do cartão de produto ao passar o mouse sobre ele*/
+    transform: translateY(-16px); /*Move o cartão de produto para cima em 5px ao passar o mouse sobre ele*/
+    
+
+}
+
+.imagem-produto {
+    width: 100%; /*Define a largura da imagem do produto como 100% do elemento pai*/
+   height: 180px; /*Define a altura da imagem do produto como 180px*/
+    object-fit: cover; /*Garante que a imagem do produto preencha o contêiner sem distorção*/
+
+}
+
+.info-produto{
+    padding: 16px; /*Adiciona um preenchimento de 16px ao redor das informações do produto*/
+
+
+}
+
+.nome-produto {
+    font: size 16px; /*Define o tamanho da fonte do nome do produto como 16px*/
+    font-weight: bold; /*Define o peso da fonte do nome do produto como negrito*/   
+    margin-bottom: 6px; /*Adiciona uma margem inferior de 6px ao nome do produto*/
+
+}
+
+.descricao-produto {
+    font-size: 13px; /*Define o tamanho da fonte da descrição do produto como 14px*/
+    margin-bottom: 12px; /*Adiciona uma margem inferior de 12px à descrição do produto*/
+}
+
+.preco-produto {
+    font-size: 20px; /*Define o tamanho da fonte do preço do produto como 18px*/
+    color: var(--primary-color); /*Define a cor do texto do preço do produto usando a variável primary-color*/
+    font-weight: bold; /*Define o peso da fonte do preço do produto como negrito*/
+    font-weight: bold;
+
+}
+
+.botao-produto {
+    width: 100%; /*Define a largura do botão do produto como 100% do elemento pai*/
+    padding: 12px; /*Adiciona um preenchimento de 12px ao redor do botão do produto*/
+    border: none; /*Remove a borda do botão do produto*/
+    border-radius: 4px; /*Adiciona um raio de borda de 8px para arredondar os cantos do botão do produto*/
+    background-color: var(--accent-color); /*Define a cor de fundo do botão do produto usando a variável primary-color*/
+    color: var(--white-color); /*Define a cor do texto do botão do produto usando a variável white-color*/
+    font-size: 16px; /*Define o tamanho da fonte do botão do produto como 16px*/
+    cursor: pointer; /*Define o cursor como pointer ao passar o mouse sobre o botão do produto*/
+    border: none ;
+    transition: 0.3s; /*Adiciona uma transição suave de 0.3 segundos para as propriedades do botão do produto*/
+
+}
+
+.botao-produto:hover {
+    background-color: #448dbe; /*Altera a cor de fundo do botão do produto ao passar o mouse sobre ele*/
+}
