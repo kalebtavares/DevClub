@@ -217,7 +217,7 @@ footer{
 
 .cartao-produto {
     background-color: var(--white-color); /*Define a cor de fundo do cartão de produto usando a variável white-color*/
-    border-radius: 16px; box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; /*Adiciona um raio de borda de 16px e uma sombra ao redor do cartão de produto*/
+    border-radius: 16px; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; /*Adiciona um raio de borda de 16px e uma sombra ao redor do cartão de produto*/
     cursor: pointer;    /*Define o cursor como pointer ao passar o mouse sobre o cartão de produto*/ 
     transition: 0.5s; /*Adiciona uma transição suave de 0.3 segundos para as propriedades do cartão de produto*/
     overflow: hidden; /*Garante que o conteúdo do cartão de produto não ultrapasse os limites do cartão*/
