@@ -1,4 +1,4 @@
-# ⚡ Kbyte Store
+# ⚡ Shooping Imports
 
 Projeto de site simples de e-commerce fictício, desenvolvido com HTML, CSS e JavaScript. A proposta é exibir uma vitrine de produtos com categorias e descontos, simulando uma loja online.
 
