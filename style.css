@@ -225,8 +225,8 @@ footer{
 }
 
 .cartao-produto:hover {
-    box-shadow:box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; /*Adiciona uma sombra mais intensa ao redor do cartão de produto ao passar o mouse sobre ele*/
-    transform: translateY(-16px); /*Move o cartão de produto para cima em 5px ao passar o mouse sobre ele*/
+    box-shadow:box-shadow; rgba:(100, 100, 111, 0.2) 0px 7px 29px 0px; /*Adiciona uma sombra mais intensa ao redor do cartão de produto ao passar o mouse sobre ele*/
+    transform:translateY(-16px) /*Move o cartão de produto para cima em 5px ao passar o mouse sobre ele*/
     
 
 }

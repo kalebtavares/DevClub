@@ -92,13 +92,20 @@ let produtos = [
 let containerProdutos = document.querySelector(".produtos-container");
 let inputPesquisa = document.querySelector(".input-pesquisa");
 let textoInput=""
+let todosBotoes = document.querySelectorAll(".botao-categorias")
+let categoria = "todos"
 
 
 
 function mostrarProdutos() {
   let htmlProdutos = ""
 
-  produtos.forEach((prd) => {
+  produtos.forEach(prd => {
+
+    if(prd.nome.toLocaleLowerCase().includes(textoInput.toLocaleLowerCase())){
+
+    if (prd.categoria === categoria || categoria === "todos") {
+
     htmlProdutos =
       htmlProdutos +
       `<div class="cartao-produto">
@@ -110,14 +117,34 @@ function mostrarProdutos() {
                     <button class="botao-produto">Ver detalhes</button>
                 </div>
             </div>`
-  });
+            }
+  }
+  })
 
-  containerProdutos.innerHTML = htmlProdutos;
+  containerProdutos.innerHTML = htmlProdutos
 }
-mostrarProdutos();
+mostrarProdutos()
 
 function pesquisar(){
   textoInput = inputPesquisa.value
+  mostrarProdutos()
+
 }
 
-inputPesquisa.addEventListener("input", pesquisar )
+inputPesquisa.addEventListener("input", pesquisar)
+
+todosBotoes.forEach(botao => {
+
+  botao.addEventListener("click", function () {
+    categoria = botao.getAttribute("data-categoria")
+    todosBotoes.forEach(b => b.classList.remove("ativo"))
+
+    botao.classList.add("ativo")
+
+    mostrarProdutos()
+
+    })
+  })
+
+
+
