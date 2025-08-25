@@ -29,7 +29,7 @@ Projeto de site simples de e-commerce fictício, desenvolvido com HTML, CSS e Ja
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/kalebtavares/kbyte-store.git
+   git clone https://github.com/kalebtavares/DevClub.git
 
 ## 📈 Melhorias Futuras
 
