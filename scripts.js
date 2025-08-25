@@ -90,6 +90,10 @@ let produtos = [
 ];
 
 let containerProdutos = document.querySelector(".produtos-container");
+let inputPesquisa = document.querySelector(".input-pesquisa");
+let textoInput=""
+
+
 
 function mostrarProdutos() {
   let htmlProdutos = ""
@@ -111,3 +115,9 @@ function mostrarProdutos() {
   containerProdutos.innerHTML = htmlProdutos;
 }
 mostrarProdutos();
+
+function pesquisar(){
+  textoInput = inputPesquisa.value
+}
+
+inputPesquisa.addEventListener("input", pesquisar )
